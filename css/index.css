@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  
+}
+
+
+.form{
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 20px 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+  color: #0e2954;
+  margin: 20% auto;
+  overflow: hidden;
+}
+.form-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.form-sub-title {
+  margin: 0 0 5px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.slide-clue.active {
+  margin-left: -106%;
+}
+.slide-result{
+  margin-right: -200%;
+}
+
+.result, .input-clue {
+  border: 1px solid #a7a7a7;
+  border-radius: 8px;
+  width: 100%;
+  height: 45px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  outline: none;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.form-slide  {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.tombol {
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  background: #0e2954;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  
+  outline: none;
+  float: right;
+  margin-top: 10px;
+}
+
+.tombol:focus {
+  box-shadow: none;
+}
+.tombol-tambah{
+  padding: 10px;
+  
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+
+  
+}
+.slide{
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.shake {
+  animation: shake 200ms;
+}
